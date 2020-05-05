@@ -17,7 +17,7 @@ app.use((req, res) => {
   if (ip.substr(0, 7) === "::ffff:") {
     ip = ip.substr(7);
   }
-  console.log(ip, "ip", req.url);
+  console.log(ip, "@@@@@@ ip @@@@@@@@", req.url);
   res.send("");
 });
 
