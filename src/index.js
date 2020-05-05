@@ -21,6 +21,8 @@ app.use((req, res) => {
   res.send("");
 });
 
-app.listen(8080, function() {
-  console.log("server running on 8080");
+
+var port = process.env.PORT || 8080
+app.listen(port, function() {
+  console.log("server running on" + port);
 }); //the server object listens on port 8080
