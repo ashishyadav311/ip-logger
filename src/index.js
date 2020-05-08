@@ -21,6 +21,14 @@ app.use((req, res) => {
   res.send("");
 });
 
+app.use((req, res) => {
+  if(req.url == '/temp')
+    res.writeHead('301', {
+        'Location': 'https://www.geeksforgeeks.org/write-from-home-challenge-technical-content-writing-event-by-geeksforgeeks/'
+    });
+    res.end();
+});
+
 
 var port = process.env.PORT || 8080
 app.listen(port, function() {
