@@ -18,17 +18,17 @@ app.use((req, res) => {
     ip = ip.substr(7);
   }
   console.log(ip, "@@@@@@ ip @@@@@@@@", req.url);
-  res.send("");
-});
+  
+    if(req.url == '/temp'){
+      res.writeHead('301', {
+          'Location': 'https://www.geeksforgeeks.org/write-from-home-challenge-technical-content-writing-event-by-geeksforgeeks/'
+      });
+      res.end();
+    }else{
+        res.send("");
+    }
 
-app.use((req, res) => {
-  if(req.url == '/temp')
-    res.writeHead('301', {
-        'Location': 'https://www.geeksforgeeks.org/write-from-home-challenge-technical-content-writing-event-by-geeksforgeeks/'
-    });
-    res.end();
 });
-
 
 var port = process.env.PORT || 8080
 app.listen(port, function() {
