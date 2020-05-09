@@ -21,7 +21,7 @@ app.use((req, res) => {
   
     if(req.url == '/temp'){
       res.writeHead('301', {
-          'Location': 'https://www.geeksforgeeks.org/write-from-home-challenge-technical-content-writing-event-by-geeksforgeeks/'
+          'Location': 'https://docs.google.com/forms/d/e/1FAIpQLSdEOoZ-Gt_rhuD-XeS_nRNe8H8-tL2RSWxgyTFOGaAU8dqDDQ/viewform?vc=0&c=0&w=1'
       });
       res.end();
     }else{
