@@ -19,7 +19,7 @@ app.use((req, res) => {
   }
   console.log(ip, "@@@@@@ ip @@@@@@@@", req.url);
   
-    if(req.url == '/temp'){
+    if(req.url == '/email'){
       res.writeHead('301', {
           'Location': 'https://docs.google.com/forms/d/e/1FAIpQLSdEOoZ-Gt_rhuD-XeS_nRNe8H8-tL2RSWxgyTFOGaAU8dqDDQ/viewform?vc=0&c=0&w=1'
       });
