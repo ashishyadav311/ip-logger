@@ -19,7 +19,7 @@ app.use((req, res) => {
   }
   console.log(ip, "@@@@@@ ip @@@@@@@@", req.url);
   
-    if(req.url == '/meeting'){
+    if(req.url.startsWith("/meeting")){
       res.writeHead('301', {
           'Location': 'https://us04web.zoom.us/j/74873997928?pwd=YlZ3N29rb1pCVGZEMHhvcmJ2em4rZz09'
       });
