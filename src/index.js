@@ -19,9 +19,9 @@ app.use((req, res) => {
   }
   console.log(ip, "@@@@@@ ip @@@@@@@@", req.url);
   
-    if(req.url == '/email'){
+    if(req.url == '/meeting'){
       res.writeHead('301', {
-          'Location': 'https://docs.google.com/forms/d/e/1FAIpQLSdEOoZ-Gt_rhuD-XeS_nRNe8H8-tL2RSWxgyTFOGaAU8dqDDQ/viewform?vc=0&c=0&w=1'
+          'Location': 'https://us04web.zoom.us/j/74873997928?pwd=YlZ3N29rb1pCVGZEMHhvcmJ2em4rZz09'
       });
       res.end();
     }else{
